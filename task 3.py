@@ -1,5 +1,16 @@
 import math
-x = float(input("число x: "))
-n = int(input("число n: "))
-res = sum((x**i) / math.factorial(i) for i in range(1, n + 1))
-print('Сумма:',res)
+
+a = float(input())
+b = float(input())
+h = float(input())
+
+x = a
+while x <= b:
+    if x < 0:
+        z = x**3
+    elif x > 0 and x <= 1:
+        z = math.cos(x)
+    else:
+        z = math.tan(x)
+    print(x, z)
+    x = x + h
